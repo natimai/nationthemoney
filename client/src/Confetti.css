@@ -1,0 +1,47 @@
+@keyframes fall {
+    0% {
+      transform: translateY(-120vh) translateX(0) rotate(0deg); /* מתחיל מחוץ למסך */
+      opacity: 1;
+    }
+    25% {
+      transform: translateY(30vh) translateX(-5vw) rotate(90deg); /* נדנוד שמאלה */
+    }
+    50% {
+      transform: translateY(60vh) translateX(5vw) rotate(180deg); /* נדנוד ימינה */
+    }
+    75% {
+      transform: translateY(90vh) translateX(-3vw) rotate(270deg); /* חזרה שמאלה */
+    }
+    100% {
+      transform: translateY(120vh) translateX(2vw) rotate(360deg); /* סיום מחוץ למסך */
+      opacity: 0;
+    }
+  }
+  
+  .confetti {
+    position: fixed; /* לוודא שזה תמיד ברמת המסך */
+    top: -10%; /* מתחיל מחוץ למסך */
+    font-size: 2rem;
+    animation: fall ease-in-out forwards; /* תנועה חלקה */
+    pointer-events: none;
+    z-index: 9999; /* לוודא שזה מעל כל האלמנטים */
+  }
+  @keyframes fade-in-out {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    10% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    90% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  }
+  

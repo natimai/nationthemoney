@@ -1,0 +1,177 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.header {
+  text-align: center; /* יישור מרכזי */
+  font-size: 2.5rem; /* גודל טקסט */
+  color: #4CAF50; /* צבע טקסט ירוק */
+  margin: 20px auto; /* מרווח מסביב */
+  padding: 15px; /* ריפוד פנימי */
+  background-color: #f9f9f9; /* רקע בהיר */
+  border-radius: 12px; /* פינות מעוגלות */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* הצללה */
+  width: fit-content; /* גודל לפי תוכן */
+  max-width: 90%; /* התאמה למסכים קטנים */
+  animation: fadeIn 1s ease-in-out; /* אנימציה */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+button {
+  background-color: #4CAF50; /* ירוק נחמד */
+  color: white; /* טקסט לבן */
+  border: none; /* ללא מסגרת */
+  border-radius: 8px; /* פינות מעוגלות */
+  padding: 10px 20px; /* מרווח פנימי */
+  font-size: 16px; /* גודל טקסט */
+  cursor: pointer; /* יד לסמן שזה לחיץ */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* הצללה */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* אנימציה */
+}
+
+button:hover {
+  background-color: #45a049; /* כהה מעט */
+  transform: scale(1.05); /* הגדלה קלה */
+}
+
+button:active {
+  background-color: #3e8e41; /* כהה יותר */
+  transform: scale(0.95); /* הקטנה */
+}
+.tab-button {
+  background-color: #f1f1f1; /* צבע רקע בהיר */
+  color: #333; /* צבע טקסט כהה */
+  border: none; /* ללא גבול */
+  border-bottom: 3px solid transparent; /* גבול תחתון שקוף כברירת מחדל */
+  padding: 10px 20px; /* ריווח פנימי */
+  font-size: 16px; /* גודל טקסט */
+  font-weight: bold; /* טקסט מודגש */
+  margin: 0 5px; /* מרווח בין הכפתורים */
+  border-radius: 8px; /* פינות מעוגלות */
+  cursor: pointer; /* יד לסמן שזה לחיץ */
+  transition: all 0.3s ease; /* אפקט מעבר חלק */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* הצללה */
+}
+
+.tab-button:hover {
+  background-color: #e0e0e0; /* צבע רקע כהה קלות */
+  transform: translateY(-2px); /* הזזת כפתור כלפי מעלה */
+}
+
+.tab-button.active {
+  background-color: #4CAF50; /* צבע רקע ירוק */
+  color: white; /* טקסט לבן */
+  border-bottom: 3px solid #45a049; /* גבול תחתון ירוק */
+}
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+.dashboard {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  font-size: 2rem;
+  color: #4CAF50;
+  text-align: center;
+}
+
+.overview {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 30%;
+}
+
+.card h2 {
+  color: #4CAF50;
+}
+
+.achievements {
+  margin-top: 30px;
+}
+
+.achievements h2 {
+  color: #4CAF50;
+  text-align: center;
+}
+
+.achievements ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.achievements li {
+  background-color: #f0f0f0;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+<style>
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+  }
+</style>
