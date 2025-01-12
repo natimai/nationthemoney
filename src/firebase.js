@@ -7,7 +7,7 @@ const firebaseConfig = {
   apiKey: "AIzaSyAVSHryvjH-fyJYkvXOOcBdVHIBnBRFi-4",
   authDomain: "nationthemoney.firebaseapp.com",
   projectId: "nationthemoney",
-  storageBucket: "nationthemoney.firebasestorage.app",
+  storageBucket: "nationthemoney.appspot.com", // תוקן לשימוש נכון ב-appspot.com
   messagingSenderId: "65668379170",
   appId: "1:65668379170:web:9f20b997b0bdadc69a107b"
 };
